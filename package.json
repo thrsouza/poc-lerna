@@ -1,0 +1,17 @@
+{
+  "name": "poc-lerna",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "website"
+  ],
+  "scripts": {
+    "lerna": "lerna",
+    "clean": "lerna clean --yes",
+    "install": "lerna bootstrap",
+    "templates-compression": "sh scripts/templates-compression.sh"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
