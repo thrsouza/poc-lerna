@@ -1,0 +1,16 @@
+{
+  "name": "poc-lerna",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "website"
+  ],
+  "scripts": {
+    "lerna": "lerna",
+    "clean": "lerna clean --yes",
+    "install": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
